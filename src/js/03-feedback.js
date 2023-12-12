@@ -22,12 +22,9 @@ function onSetLocalStorage (event){
   message : form.message.value
 }
   localStorage.setItem(currentContent, JSON.stringify(currentData));
-
   const saveData = localStorage.getItem(currentContent);
   // console.log(saveData);
- 
 }
-
 
 // 2. При загрузке страницы проверяй состояние хранилища, 
 //    и если там есть сохраненные данные, заполняй ими поля формы. 
